@@ -4,6 +4,7 @@ function startGame() {
   var boardCells = document.getElementsByClassName('hidden')
   for (var i = 0; i < boardCells.length; i++) {
     addListeners(boardCells[i])
+    addCellToBoard(newCell[i])
     console.log(getRow(boardCells[i]))
    }
 }
@@ -59,5 +60,6 @@ function getCol (element) {
 
 function addCellToBoard(element){
   var newCell = {};
+  
 
 }
